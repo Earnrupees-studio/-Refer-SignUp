@@ -3187,7 +3187,7 @@ click this link to get referrer benefit :" />
             });
 
 
-            $('.clsinvclk').click(function () {
+            $('.clsinvcl').click(function () {
                 $("#clientsDashboard1").show();
 				 $("#bckOverlay").show();
                 //$("#dvhme").hide();
@@ -3755,16 +3755,8 @@ document.addEventListener("DOMContentLoaded", function(){
   // Initial message  
   showMessage("⚠️ Please login to continue", "#555");  
   
-  // Main page login button click  
-  mainLoginBtn.addEventListener("click", ()=>{  
-    const popupBtn = document.getElementById("googleLoginBtn");  
-    if(popupBtn){  
-      popupBtn.click(); // trigger popup login  
-    }  
-  });  
-  
   // Popup login button click  
-  const popupLoginBtn = document.getElementById("googleLoginBtn");  
+  const popupLoginBtn = document.getElementById("btlogin");  
   if(popupLoginBtn){  
     popupLoginBtn.addEventListener("click", ()=>{  
       showMessage("⏳ Redirecting to Google Login...", "#2980b9");  
